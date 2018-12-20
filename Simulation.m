@@ -30,7 +30,7 @@ den=den{1};
 num=num{1};
 
 %%calculate the output based on curent and previous values
-for i=5:length(t)
+for i=2:length(t)
     u=[u(2:3) usim(i)];
     y=[y(2:3) 0];
     
@@ -42,9 +42,5 @@ end
 
 %%plot the input and output
 
-samples=size(ysim);
-samples=samples(2);
-
-ysim=[0 0 0 ysim];
 plot(t,[ysim],t,usim);
 
