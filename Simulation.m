@@ -2,6 +2,8 @@ close all
 %%transfer function of a low pass filter
 H=tf([6.447*10^6],[1 4449 6.447*10^6])
 Te=208e-06;
+
+%%convert into discrete
 Hd=c2d(H,Te, 'Tustin');
 
 %%inmultire coeficienti sa lucram in multimea nr intregi
@@ -13,8 +15,10 @@ num{1} = round(num{1});
 den{1} = den{1} * 2^bits;
 den{1} = round(den{1});
 
+%%represent the function in discret z^-1
 Hc=tf(num,den,'Variable', 'z^-1','Ts',Te)
 
+%%generate a sin
 t=0:0.1:10;
 usim=sin(t);
 ysim=[0];
@@ -25,8 +29,7 @@ y=[0 0 0];
 den=den{1};
 num=num{1};
 
-digits(60)
-
+%%calculate the output based on curent and previous values
 for i=5:length(t)
     u=[u(2:3) usim(i)];
     y=[y(2:3) 0];
@@ -36,6 +39,8 @@ for i=5:length(t)
     y(3) = y(3) / 2^bits;
     ysim=[ysim y(3)];
 end
+
+%%plot the input and output
 
 samples=size(ysim);
 samples=samples(2);
