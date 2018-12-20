@@ -1,5 +1,5 @@
 close all
-%%transfer function of a low pass filter
+%%transfer function of a low pass filter with cut off frequency of 345Hz
 H=tf([6.447*10^6],[1 4449 6.447*10^6])
 Te=208e-06;
 
