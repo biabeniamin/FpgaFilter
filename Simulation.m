@@ -6,9 +6,9 @@ Te=208e-06;
 %%convert into discrete
 Hd=c2d(H,Te, 'Tustin');
 
-%%inmultire coeficienti sa lucram in multimea nr intregi
+%%multiples the number to don't have to work with floating point
 [num, den] = tfdata(Hd);
-bits=22;
+bits=20;
 
 num{1} = num{1} * 2^bits;
 num{1} = round(num{1});
@@ -43,4 +43,5 @@ end
 %%plot the input and output
 
 plot(t,[ysim],t,usim);
-
+legend('output', 'input')
+title('System response - input and output of filter')
