@@ -20,6 +20,7 @@
 
 module top(
     input clk,
+    input clk2,
     input [7:0] ja,
     output [3:0] led,
     output test
@@ -108,5 +109,5 @@ module top(
     assign led[2] = (pwm_count <= pwm_duty2) ? 1 : 0;
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
     
-    assign test = clk;
+    assign test = clk2;
 endmodule
