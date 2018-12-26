@@ -47,7 +47,7 @@ module OLED_master (
     localparam  base_str1="Ch1: X.XXXV", base_str1_len=11;
     localparam  base_str2="Ch0: X.XXXV", base_str2_len=11;
     localparam  base_str3="Ch8: X.XXXV", base_str3_len=11;
-    localparam  base_str4="Ch9: X.XXXV", base_str4_len=11;
+    localparam  base_str4="10 la Dobra", base_str4_len=11;
     //startup/bringdown control pin - derived from cpu_resetn(active low)
     wire        rst;
         
