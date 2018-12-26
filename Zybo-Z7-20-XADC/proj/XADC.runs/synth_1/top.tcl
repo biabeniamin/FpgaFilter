@@ -34,7 +34,10 @@ set_property ip_repo_paths d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/repo [current
 set_property ip_output_repo d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/repo/cache [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v
-read_vhdl -library xil_defaultlib D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd
+read_vhdl -library xil_defaultlib {
+  D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd
+  D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd
+}
 read_ip -quiet D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xci
 set_property used_in_implementation false [get_files -all d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc]

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 12/26/2018 02:36:13 PM
+-- Create Date: 12/26/2018 03:13:57 PM
 -- Design Name: 
--- Module Name: ClockDivider - Behavioral
+-- Module Name: dac - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -24,38 +24,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
-use IEEE.NUMERIC_STD.ALL;
-use ieee.std_logic_unsigned.all;
+--use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity ClockDivider is
-    Port ( dClk : in STD_LOGIC;
-        mask : in STD_LOGIC_VECTOR(31 downto 0);
-           dClkD : out STD_LOGIC);
-end ClockDivider;
+entity dac is
+    Port ( value : in STD_LOGIC_VECTOR (7 downto 0);
+    dacBits : out std_logic_vector(7 downto 0));
+end dac;
 
-architecture Behavioral of ClockDivider is
-
-signal counter : std_logic_vector(31 downto 0);
-signal masked : std_logic_vector(31 downto 0);
+architecture Behavioral of dac is
 
 begin
-
-    process(dClk)
-    begin
-    
-        if(rising_edge(dClk)) then
-            counter <= counter + 1;
-        end if;
-    
-    end process;
-masked <= (counter and mask);
-
-dClkD <= counter(10);
-
+    dacBits <= value;
 
 end Behavioral;

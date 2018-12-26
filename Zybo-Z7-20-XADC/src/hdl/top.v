@@ -22,7 +22,8 @@ module top(
     input clk,
     input [7:0] ja,
     output [3:0] led,
-    output test
+    output test,
+    output [7:0] dacBits 
     
 );
     reg [6:0] daddr = 0; // address of channel to be read
@@ -47,11 +48,17 @@ module top(
     
     reg [9:0] clockDivider;
     wire clk2;
+    wire [7:0] dacOutputBits;
     
     ClockDivider div(
     .dClk (clk),
     .mask ("00000000000000010000000000000000"),
     .dClkD (clk2)
+    );
+    
+    dac dd(
+        .value("10000000"),
+        .dacBits(dacOutputBits)
     );
     
     xadc_wiz_0 myxadc (
@@ -119,4 +126,5 @@ module top(
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
     
     assign test = clk2;
+    assign dacBits = dacOutputBits;
 endmodule
