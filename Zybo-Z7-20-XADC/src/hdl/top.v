@@ -21,7 +21,9 @@
 module top(
     input clk,
     input [7:0] ja,
-    output [3:0] led
+    output [3:0] led,
+    output test
+    
 );
     reg [6:0] daddr = 0; // address of channel to be read
     reg [0:0] ledidx = 0; // index of the led to capture data for
@@ -105,4 +107,6 @@ module top(
     assign led[1] = (pwm_count <= pwm_duty1) ? 1 : 0;
     assign led[2] = (pwm_count <= pwm_duty2) ? 1 : 0;
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
+    
+    assign test = clk;
 endmodule
