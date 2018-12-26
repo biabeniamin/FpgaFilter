@@ -24,7 +24,7 @@ module top(
     output [3:0] led
 );
     reg [6:0] daddr = 0; // address of channel to be read
-    reg [1:0] ledidx = 0; // index of the led to capture data for
+    reg [0:0] ledidx = 0; // index of the led to capture data for
     
     wire eoc; // xadc end of conversion flag
     wire [15:0] dout; // xadc data out bus
