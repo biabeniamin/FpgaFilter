@@ -46,6 +46,12 @@ module top(
     reg [7:0] pwm_duty3;
     
     reg [9:0] clockDivider;
+    wire clk2;
+    
+    ClockDivider div(
+    .dClk (clk),
+    .dClkD (clk2)
+    );
     
     xadc_wiz_0 myxadc (
         .dclk_in        (clk),
@@ -111,5 +117,5 @@ module top(
     assign led[2] = (pwm_count <= pwm_duty2) ? 1 : 0;
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
     
-    assign test = clockDivider[8];
+    assign test = clk2;
 endmodule
