@@ -20,7 +20,6 @@
 
 module top(
     input clk,
-    input clk2,
     input [7:0] ja,
     output [3:0] led,
     output test
@@ -45,6 +44,8 @@ module top(
     reg [7:0] pwm_duty1;
     reg [7:0] pwm_duty2;
     reg [7:0] pwm_duty3;
+    
+    reg [9:0] clockDivider;
     
     xadc_wiz_0 myxadc (
         .dclk_in        (clk),
@@ -91,6 +92,7 @@ module top(
             3: data3 <= dout[15:8];
             endcase
         end
+        clockDivider <= clockDivider + 1;
     end
     
     always@(posedge clk)
@@ -109,5 +111,5 @@ module top(
     assign led[2] = (pwm_count <= pwm_duty2) ? 1 : 0;
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
     
-    assign test = clk2;
+    assign test = clockDivider[8];
 endmodule
