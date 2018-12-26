@@ -50,6 +50,7 @@ module top(
     
     ClockDivider div(
     .dClk (clk),
+    .mask ("00000000000000010000000000000000"),
     .dClkD (clk2)
     );
     
