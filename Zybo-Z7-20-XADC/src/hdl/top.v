@@ -58,7 +58,8 @@ module top(
     
     dac dd(
         .value("10000000"),
-        .dacBits(dacBits)
+        .dacBits(dacBits),
+        .clk(clk2)
     );
     
     xadc_wiz_0 myxadc (
