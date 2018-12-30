@@ -46,6 +46,8 @@ signal y3 : signed(31 downto 0);
 signal u1 : signed(31 downto 0);
 signal u2 : signed(31 downto 0);
 signal u3 : signed(31 downto 0);
+
+signal temp : signed(31 downto 0);
 --type reg_array is array(0 to 2) of signed(22 downto 0);
 --signal y : reg_array :=(
 --""
@@ -64,7 +66,8 @@ begin
             u2<=u3;
             u3<=signed("000000000000000000000000" & inp);
             
-            y3 <= (1375*u3 + 2751*u2 + 1375*u1 + 96605*y2 - 36570*y1 );
+            temp <= (1375*u3 + 2751*u2 + 1375*u1 + 96605*y2 - 36570*y1 );
+            y3 <= temp(31 downto 0);
             y3 <= shift_right(y3, 16);
             
             outp <= STD_LOGIC_VECTOR(y3);
