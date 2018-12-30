@@ -91,21 +91,14 @@ module top(
     always@(*)
         case (ledidx)
         0: daddr = 7'h1E;
-        1: daddr = 7'h17;
-        2: daddr = 7'h1F;
-        3: daddr = 7'h16;
+        1: daddr = 7'h1E;
         default: daddr = 7'h1E;
         endcase
         
     always@(posedge clk) begin
         if (_drdy == 2'b10) begin // on negative edge
             ledidx <= ledidx + 1;
-            case (ledidx)
-            0: data0 <= dout[15:8];
-            1: data1 <= dout[15:8];
-            2: data2 <= dout[15:8];
-            3: data3 <= dout[15:8];
-            endcase
+            data0 <= dout[15:8];
         end
         clockDivider <= clockDivider + 1;
     end
