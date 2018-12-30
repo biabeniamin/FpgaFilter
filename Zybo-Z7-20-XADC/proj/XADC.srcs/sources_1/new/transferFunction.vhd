@@ -79,9 +79,12 @@ begin
             u2<=u3;
             u3<=signed("000000000000000000000000" & inp);
             
-            temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 ) * 4;
+            temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
             y3 <= temp(31 downto 0);
             --y3 <= shift_right(y3, 4);
+            
+            temp <= y3 * 4;
+            y3 <= temp(31 downto 0);
             
             outp <= std_logic_vector(y3(7 downto 0));
         end if;
