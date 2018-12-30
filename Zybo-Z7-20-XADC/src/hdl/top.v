@@ -58,7 +58,7 @@ module top(
     
     dac dd(
         .value("10000000"),
-        .dacBits(dacOutputBits)
+        .dacBits(dacBits)
     );
     
     xadc_wiz_0 myxadc (
@@ -126,5 +126,4 @@ module top(
     assign led[3] = (pwm_count <= pwm_duty3) ? 1 : 0;
     
     assign test = clk2;
-    assign dacBits = dacOutputBits;
 endmodule

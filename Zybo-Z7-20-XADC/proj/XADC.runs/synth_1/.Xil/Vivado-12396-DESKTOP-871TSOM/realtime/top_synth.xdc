@@ -1,0 +1,8 @@
+set_property SRC_FILE_INFO {cfile:d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc rfile:../../../../../../src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc id:1 order:EARLY scoped_inst:myxadc} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc rfile:../../../../../../src/constraints/Zybo-Z7.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property IS_IP_OOC_CELL true [get_cells myxadc]
+set_property src_info {type:XDC file:2 line:11 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 8000.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports clk]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property DONT_TOUCH true [get_cells myxadc]

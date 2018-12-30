@@ -39,6 +39,6 @@ end dac;
 architecture Behavioral of dac is
 
 begin
-    dacBits <= value;
+    dacBits <= "00000000";
 
 end Behavioral;
