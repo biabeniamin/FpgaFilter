@@ -47,7 +47,8 @@ signal u1 : signed(31 downto 0);
 signal u2 : signed(31 downto 0);
 signal u3 : signed(31 downto 0);
 
-signal temp : signed(31 downto 0);
+signal temp : signed(63 downto 0);
+signal temp : signed(63 downto 0);
 --type reg_array is array(0 to 2) of signed(22 downto 0);
 --signal y : reg_array :=(
 --""
@@ -70,7 +71,7 @@ begin
             y3 <= temp(31 downto 0);
             y3 <= shift_right(y3, 16);
             
-            outp <= STD_LOGIC_VECTOR(y3);
+            outp <= std_logic_vector(y3(7 downto 0));
         end if;
     end process;
 
