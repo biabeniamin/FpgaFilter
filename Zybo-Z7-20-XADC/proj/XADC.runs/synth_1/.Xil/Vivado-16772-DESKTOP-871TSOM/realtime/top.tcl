@@ -16,7 +16,7 @@ set rt::rc [catch {
     set rt::cmdEcho 0
     rt::set_parameter writeXmsg true
     rt::set_parameter enableParallelHelperSpawn true
-    set ::env(RT_TMP) "D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-10452-DESKTOP-871TSOM/realtime/tmp"
+    set ::env(RT_TMP) "D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-16772-DESKTOP-871TSOM/realtime/tmp"
     if { [ info exists ::env(RT_TMP) ] } {
       file delete -force $::env(RT_TMP)
       file mkdir $::env(RT_TMP)
@@ -36,7 +36,7 @@ set rt::rc [catch {
     if {$rt::useElabCache == false} {
       rt::read_verilog D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v
       rt::read_vhdl -lib xil_defaultlib {
-      D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-10452-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl
+      D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-16772-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl
       D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd
       D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd
       D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd
@@ -57,7 +57,7 @@ set rt::rc [catch {
     rt::set_parameter rstSrlDepthThreshold 4
 # MODE: 
     rt::set_parameter webTalkPath {}
-    rt::set_parameter enableSplitFlowPath "D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-10452-DESKTOP-871TSOM/"
+    rt::set_parameter enableSplitFlowPath "D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-16772-DESKTOP-871TSOM/"
     set ok_to_delete_rt_tmp true 
     if { [rt::get_parameter parallelDebug] } { 
        set ok_to_delete_rt_tmp false 
