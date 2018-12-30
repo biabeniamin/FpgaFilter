@@ -64,6 +64,7 @@ module top(
         
     transferFunction tf(
         .inp(data0),
+        .clk(clk2),
         .outp(dacOutputBits)
     );
     
