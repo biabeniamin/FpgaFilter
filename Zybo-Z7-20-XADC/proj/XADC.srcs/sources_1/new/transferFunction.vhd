@@ -22,10 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
@@ -39,15 +36,15 @@ end transferFunction;
 
 architecture Behavioral of transferFunction is
 
-signal y1 : signed(31 downto 0) := "00000000000000000000000000000000";
-signal y2 : signed(31 downto 0) := "00000000000000000000000000000000";
-signal y3 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal y1 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal y2 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal y3 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
-signal u1 : signed(31 downto 0) := "00000000000000000000000000000000";
-signal u2 : signed(31 downto 0) := "00000000000000000000000000000000";
-signal u3 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal u1 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal u2 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal u3 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
-signal temp : signed(63 downto 0);
+signal temp : std_logic_vector(63 downto 0);
 
 --type reg_array is array(0 to 2) of signed(22 downto 0);
 --signal y : reg_array :=(
@@ -77,17 +74,17 @@ begin
             
             u1<=u2;
             u2<=u3;
-            u3<=signed("000000000000000000000000" & inp);
+            u3<="000000000000000000000000" & inp;
             
             --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
-            temp <= (u1 * 1 );
+            temp <= u2 + std_logic_vector(24*unsigned(y2)) -  std_logic_vector(9*unsigned(y1))  ;
             y3 <= temp(31 downto 0);
             --y3 <= shift_right(y3, 4);
             
             --temp <= y3 * 4;
             --y3 <= temp(31 downto 0);
             
-            outp <= std_logic_vector(y3(7 downto 0));
+            outp <= std_logic_vector(y3(9 downto 2));
         end if;
     end process;
     
