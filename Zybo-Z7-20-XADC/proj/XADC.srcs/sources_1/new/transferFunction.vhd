@@ -58,6 +58,7 @@ attribute mark_debug of clk : signal is "true";
 attribute mark_debug of y1 : signal is "true";
 attribute mark_debug of y2 : signal is "true";
 attribute mark_debug of y3 : signal is "true";
+attribute mark_debug of temp : signal is "true";
 
 attribute mark_debug of u1 : signal is "true";
 attribute mark_debug of u2 : signal is "true";

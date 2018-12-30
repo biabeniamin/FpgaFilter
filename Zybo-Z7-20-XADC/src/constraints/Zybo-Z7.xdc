@@ -201,6 +201,8 @@ set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports {dacBits[7]}
 
 
 
+
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
@@ -213,8 +215,12 @@ set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
 set_property port_width 1 [get_debug_ports u_ila_0/clk]
 connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG]]
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {tf/y3[0]} {tf/y3[1]} {tf/y3[2]} {tf/y3[3]} {tf/y3[4]} {tf/y3[5]} {tf/y3[6]} {tf/y3[7]} {tf/y3[8]} {tf/y3[9]} {tf/y3[10]} {tf/y3[11]} {tf/y3[12]} {tf/y3[13]} {tf/y3[14]} {tf/y3[15]} {tf/y3[16]} {tf/y3[17]} {tf/y3[18]} {tf/y3[19]} {tf/y3[20]} {tf/y3[21]} {tf/y3[22]} {tf/y3[23]} {tf/y3[24]} {tf/y3[25]} {tf/y3[26]} {tf/y3[27]} {tf/y3[28]} {tf/y3[29]} {tf/y3[30]} {tf/y3[31]}]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {tf/temp[0]} {tf/temp[1]} {tf/temp[2]} {tf/temp[3]} {tf/temp[4]} {tf/temp[5]} {tf/temp[6]} {tf/temp[7]} {tf/temp[8]} {tf/temp[9]} {tf/temp[10]} {tf/temp[11]} {tf/temp[12]} {tf/temp[13]} {tf/temp[14]} {tf/temp[15]} {tf/temp[16]} {tf/temp[17]} {tf/temp[18]} {tf/temp[19]} {tf/temp[20]} {tf/temp[21]} {tf/temp[22]} {tf/temp[23]} {tf/temp[24]} {tf/temp[25]} {tf/temp[26]} {tf/temp[27]} {tf/temp[28]} {tf/temp[29]} {tf/temp[30]} {tf/temp[31]} {tf/temp[32]} {tf/temp[33]} {tf/temp[34]} {tf/temp[35]} {tf/temp[36]} {tf/temp[37]} {tf/temp[38]} {tf/temp[39]} {tf/temp[40]} {tf/temp[41]} {tf/temp[42]} {tf/temp[43]} {tf/temp[44]} {tf/temp[45]} {tf/temp[46]} {tf/temp[47]} {tf/temp[48]} {tf/temp[49]} {tf/temp[50]} {tf/temp[51]} {tf/temp[52]} {tf/temp[53]} {tf/temp[54]} {tf/temp[55]} {tf/temp[56]} {tf/temp[57]} {tf/temp[58]} {tf/temp[59]} {tf/temp[60]} {tf/temp[61]} {tf/temp[62]} {tf/temp[63]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {tf/y3[0]} {tf/y3[1]} {tf/y3[2]} {tf/y3[3]} {tf/y3[4]} {tf/y3[5]} {tf/y3[6]} {tf/y3[7]} {tf/y3[8]} {tf/y3[9]} {tf/y3[10]} {tf/y3[11]} {tf/y3[12]} {tf/y3[13]} {tf/y3[14]} {tf/y3[15]} {tf/y3[16]} {tf/y3[17]} {tf/y3[18]} {tf/y3[19]} {tf/y3[20]} {tf/y3[21]} {tf/y3[22]} {tf/y3[23]} {tf/y3[24]} {tf/y3[25]} {tf/y3[26]} {tf/y3[27]} {tf/y3[28]} {tf/y3[29]} {tf/y3[30]} {tf/y3[31]}]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
