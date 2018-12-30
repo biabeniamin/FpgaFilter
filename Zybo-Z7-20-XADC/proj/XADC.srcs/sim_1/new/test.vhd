@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use ieee.std_logic_unsigned.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
@@ -43,14 +43,14 @@ architecture Behavioral of test is
 signal clk : std_logic;
 
 
-signal inp : STD_LOGIC_VECTOR (7 downto 0);
+signal inp : std_logic_vector (7 downto 0);
 
-signal outp : STD_LOGIC_VECTOR (7 downto 0);
+signal outp : std_logic_vector (7 downto 0);
 
 component transferFunction
-Port ( inp : in STD_LOGIC_VECTOR (7 downto 0);
+Port ( inp : in std_logic_vector (7 downto 0);
             clk : in std_logic;
-           outp : out STD_LOGIC_VECTOR (7 downto 0));
+           outp : out std_logic_vector (7 downto 0));
 end component;
 
 
@@ -59,14 +59,23 @@ uu : transferFunction port map(clk => clk, inp => inp, outp => outp);
 
 process
 begin
+    inp <="11111111";
     clk <= '1';
-    wait for 1 ms;
-    clk <= '0';
-    wait for 1 ms;
-    clk <= '1';
-        wait for 1 ms;
-        clk <= '0';
-        wait for 1 ms;
+       wait for 1 ms;
+       clk <= '0';
+       wait for 1 ms;
+       clk <= '1';
+           wait for 1 ms;
+           clk <= '0';
+           wait for 1 ms;
+            clk <= '1';
+              wait for 1 ms;
+              clk <= '0';
+              wait for 1 ms;
+              clk <= '1';
+                  wait for 1 ms;
+                  clk <= '0';
+                  wait for 1 ms;
 end process;
 
 end Behavioral;

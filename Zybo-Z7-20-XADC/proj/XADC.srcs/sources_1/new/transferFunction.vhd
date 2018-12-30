@@ -32,20 +32,20 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity transferFunction is
-    Port ( inp : in STD_LOGIC_VECTOR (7 downto 0);
+    Port ( inp : in std_logic_vector (7 downto 0);
             clk : in std_logic;
-           outp : out STD_LOGIC_VECTOR (7 downto 0));
+           outp : out std_logic_vector (7 downto 0));
 end transferFunction;
 
 architecture Behavioral of transferFunction is
 
-signal y1 : signed(31 downto 0);
-signal y2 : signed(31 downto 0);
-signal y3 : signed(31 downto 0);
+signal y1 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal y2 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal y3 : signed(31 downto 0) := "00000000000000000000000000000000";
 
-signal u1 : signed(31 downto 0);
-signal u2 : signed(31 downto 0);
-signal u3 : signed(31 downto 0);
+signal u1 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal u2 : signed(31 downto 0) := "00000000000000000000000000000000";
+signal u3 : signed(31 downto 0) := "00000000000000000000000000000000";
 
 signal temp : signed(63 downto 0);
 
@@ -79,15 +79,18 @@ begin
             u2<=u3;
             u3<=signed("000000000000000000000000" & inp);
             
-            temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
+            --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
+            temp <= u3 *2;
             y3 <= temp(31 downto 0);
             --y3 <= shift_right(y3, 4);
             
-            temp <= y3 * 4;
-            y3 <= temp(31 downto 0);
+            --temp <= y3 * 4;
+            --y3 <= temp(31 downto 0);
             
             outp <= std_logic_vector(y3(7 downto 0));
         end if;
     end process;
+    
+    
 
 end Behavioral;
