@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 12/26/2018 02:36:13 PM
+-- Create Date: 12/30/2018 10:30:47 PM
 -- Design Name: 
--- Module Name: ClockDivider - Behavioral
+-- Module Name: test - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -25,37 +25,48 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
-use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity ClockDivider is
-    Port ( dClk : in STD_LOGIC;
 
-           dClkD : out STD_LOGIC);
-end ClockDivider;
 
-architecture Behavioral of ClockDivider is
 
-signal counter : std_logic_vector(31 downto 0);
-signal masked : std_logic_vector(31 downto 0);
+entity test is
+    Port ( u : in STD_LOGIC_VECTOR (7 downto 0));
+end test;
+
+architecture Behavioral of test is
+
+signal clk : std_logic;
+
+
+signal inp : STD_LOGIC_VECTOR (7 downto 0);
+
+signal outp : STD_LOGIC_VECTOR (7 downto 0);
+
+component transferFunction
+Port ( inp : in STD_LOGIC_VECTOR (7 downto 0);
+            clk : in std_logic;
+           outp : out STD_LOGIC_VECTOR (7 downto 0));
+end component;
+
 
 begin
+uu : transferFunction port map(clk => clk, inp => inp, outp => outp);
 
-    process(dClk)
-    begin
-    
-        if(rising_edge(dClk)) then
-            counter <= counter + 1;
-        end if;
-    
-    end process;
---masked <= (counter and mask);
-
-dClkD <= counter(13);
-
+process
+begin
+    clk <= '1';
+    wait for 1 ms;
+    clk <= '0';
+    wait for 1 ms;
+    clk <= '1';
+        wait for 1 ms;
+        clk <= '0';
+        wait for 1 ms;
+end process;
 
 end Behavioral;
