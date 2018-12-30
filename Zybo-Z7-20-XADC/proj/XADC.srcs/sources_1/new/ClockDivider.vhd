@@ -55,7 +55,7 @@ begin
     end process;
 masked <= (counter and mask);
 
-dClkD <= counter(10);
+dClkD <= counter(27);
 
 
 end Behavioral;
