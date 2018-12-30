@@ -56,6 +56,8 @@ signal temp : signed(63 downto 0);
 
 attribute mark_debug : string;
 
+attribute mark_debug of clk : signal is "true";
+
 attribute mark_debug of y1 : signal is "true";
 attribute mark_debug of y2 : signal is "true";
 attribute mark_debug of y3 : signal is "true";

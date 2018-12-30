@@ -2,10 +2,335 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Dec 30 21:17:55 2018
-# Process ID: 14844
+# Start of session at: Sun Dec 30 21:28:27 2018
+# Process ID: 12212
 # Current directory: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.vds
 # Journal file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/biabe/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3428 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 412.652 ; gain = 94.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
+INFO: [Synth 8-638] synthesizing module 'ClockDivider' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (1#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'dac' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'dac' (2#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'transferFunction' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:36]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:43]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:46]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:48]
+WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'transferFunction' (3#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-12212-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl:33]
+WARNING: [Synth 8-350] instance 'myxadc' of module 'xadc_wiz_0' requires 22 connections, but only 16 given [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:71]
+INFO: [Synth 8-226] default block is never used [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:98]
+WARNING: [Synth 8-6014] Unused sequential element ledidx_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:106]
+WARNING: [Synth 8-6014] Unused sequential element clockDivider_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
+WARNING: [Synth 8-3331] design dac has unconnected port clk
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[31]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[30]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[29]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[28]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[27]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[26]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[25]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[24]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[23]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[22]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[21]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[20]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[19]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[18]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[17]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[16]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[15]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[14]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[13]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[12]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[11]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[10]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[9]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[8]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[7]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[6]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[5]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[4]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[3]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[2]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[1]
+WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 466.617 ; gain = 148.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 466.617 ; gain = 148.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 466.617 ; gain = 148.496
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'myxadc'
+Finished Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'myxadc'
+Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]
+Finished Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 830.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for myxadc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'pwm_duty2_reg[7:0]' into 'pwm_duty1_reg[7:0]' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:119]
+INFO: [Synth 8-4471] merging register 'pwm_duty3_reg[7:0]' into 'pwm_duty1_reg[7:0]' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:120]
+WARNING: [Synth 8-6014] Unused sequential element pwm_duty2_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:119]
+WARNING: [Synth 8-6014] Unused sequential element pwm_duty3_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:120]
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module transferFunction 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[0]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[1]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[2]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[3]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[4]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[5]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[6]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pwm_duty1_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (pwm_duty1_reg[7]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 830.398 ; gain = 512.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module myxadc has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module myxadc has unconnected pin vn_in
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:78]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |xadc_wiz_0_bbox_0 |     1|
+|2     |BUFG              |     1|
+|3     |CARRY4            |     6|
+|4     |LUT1              |     2|
+|5     |LUT2              |     7|
+|6     |LUT3              |     3|
+|7     |LUT4              |     9|
+|8     |LUT5              |     1|
+|9     |LUT6              |     3|
+|10    |FDRE              |   240|
+|11    |IBUF              |     9|
+|12    |OBUF              |    13|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   320|
+|2     |  div    |ClockDivider     |    19|
+|3     |  tf     |transferFunction |   200|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 831.547 ; gain = 149.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 831.547 ; gain = 513.426
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 41 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 843.668 ; gain = 534.719
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 843.668 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 30 21:28:52 2018...
