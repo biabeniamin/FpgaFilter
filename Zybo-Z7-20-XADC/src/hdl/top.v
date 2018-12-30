@@ -57,9 +57,14 @@ module top(
     );
     
     dac dd(
-        .value("10000000"),
-        .dacBits(dacBits),
-        .clk(clk2)
+            .value(dacOutputBits),
+            .dacBits(dacBits),
+            .clk(clk2)
+        );
+        
+    transferFunction tf(
+        .inp(data0),
+        .outp(dacOutputBits)
     );
     
     xadc_wiz_0 myxadc (

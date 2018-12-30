@@ -2,91 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Dec 30 19:58:36 2018
-# Process ID: 26804
+# Start of session at: Sun Dec 30 20:15:06 2018
+# Process ID: 11936
 # Current directory: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.vds
 # Journal file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-Sourcing tcl script 'C:/Users/biabe/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
-source top.tcl -notrace
-Command: synth_design -top top -part xc7z020clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22756 
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 411.184 ; gain = 94.035
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
-INFO: [Synth 8-638] synthesizing module 'ClockDivider' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (1#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
-INFO: [Synth 8-638] synthesizing module 'dac' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'dac' (2#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-26804-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl:33]
-WARNING: [Synth 8-350] instance 'myxadc' of module 'xadc_wiz_0' requires 22 connections, but only 16 given [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:65]
-INFO: [Synth 8-226] default block is never used [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:92]
-WARNING: [Synth 8-6014] Unused sequential element ledidx_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:100]
-WARNING: [Synth 8-6014] Unused sequential element clockDivider_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:103]
-INFO: [Synth 8-6155] done synthesizing module 'top' (3#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
-WARNING: [Synth 8-3331] design dac has unconnected port value[7]
-WARNING: [Synth 8-3331] design dac has unconnected port value[6]
-WARNING: [Synth 8-3331] design dac has unconnected port value[5]
-WARNING: [Synth 8-3331] design dac has unconnected port value[4]
-WARNING: [Synth 8-3331] design dac has unconnected port value[3]
-WARNING: [Synth 8-3331] design dac has unconnected port value[2]
-WARNING: [Synth 8-3331] design dac has unconnected port value[1]
-WARNING: [Synth 8-3331] design dac has unconnected port value[0]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[31]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[30]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[29]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[28]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[27]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[26]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[25]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[24]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[23]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[22]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[21]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[20]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[19]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[18]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[17]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[16]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[15]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[14]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[13]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[12]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[11]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[10]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[9]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[8]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[7]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[6]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[5]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[4]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[3]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[2]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[1]
-WARNING: [Synth 8-3331] design ClockDivider has unconnected port mask[0]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 466.621 ; gain = 149.473
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 466.621 ; gain = 149.473
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 466.621 ; gain = 149.473
----------------------------------------------------------------------------------

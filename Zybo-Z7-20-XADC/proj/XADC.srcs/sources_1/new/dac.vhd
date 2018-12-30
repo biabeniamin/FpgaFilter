@@ -49,6 +49,6 @@ begin
             counter <= counter + 1;
         end if;
     end process;
-    dacBits <= counter;
+    dacBits <= value;
 
 end Behavioral;

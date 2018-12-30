@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,6 +36,7 @@ read_verilog -library xil_defaultlib D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src
 read_vhdl -library xil_defaultlib {
   D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd
   D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd
+  D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd
 }
 read_ip -quiet D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xci
 set_property used_in_implementation false [get_files -all d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc]

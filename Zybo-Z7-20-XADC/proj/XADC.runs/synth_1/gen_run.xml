@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1546192714">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1546193704">
   <File Type="PA-TCL" Name="top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
@@ -18,6 +18,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/dac.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/transferFunction.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -51,8 +57,8 @@
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
     <Step Id="synth_design">
-      <Option Id="FlattenHierarchy">1</Option>
       <Option Id="Directive">0</Option>
+      <Option Id="FlattenHierarchy">1</Option>
       <Option Id="FsmExtraction">0</Option>
     </Step>
   </Strategy>
