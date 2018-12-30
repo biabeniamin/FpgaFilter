@@ -80,7 +80,7 @@ begin
             u3<=signed("000000000000000000000000" & inp);
             
             --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
-            temp <= u3 *2;
+            temp <= (u1 * 1 );
             y3 <= temp(31 downto 0);
             --y3 <= shift_right(y3, 4);
             
