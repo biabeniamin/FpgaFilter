@@ -48,11 +48,21 @@ signal u2 : signed(31 downto 0);
 signal u3 : signed(31 downto 0);
 
 signal temp : signed(63 downto 0);
-signal temp : signed(63 downto 0);
+
 --type reg_array is array(0 to 2) of signed(22 downto 0);
 --signal y : reg_array :=(
 --""
 --);
+
+attribute mark_debug : string;
+
+attribute mark_debug of y1 : signal is "true";
+attribute mark_debug of y2 : signal is "true";
+attribute mark_debug of y3 : signal is "true";
+
+attribute mark_debug of u1 : signal is "true";
+attribute mark_debug of u2 : signal is "true";
+attribute mark_debug of u3 : signal is "true";
 
 begin
     process(clk)
