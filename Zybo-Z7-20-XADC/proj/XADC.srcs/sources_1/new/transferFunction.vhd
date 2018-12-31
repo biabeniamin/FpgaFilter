@@ -23,6 +23,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.ALL;
+
+library ieee_proposed;
+use ieee_proposed.fixed_pkg.all;
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
@@ -36,56 +39,57 @@ end transferFunction;
 
 architecture Behavioral of transferFunction is
 
-signal y1 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal y2 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal y3 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
-signal u1 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal u2 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
-signal u3 : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal temp : std_logic_vector(63 downto 0):= "0000000000000000000000000000000000000000000000000000000000000000";
 
-signal temp : std_logic_vector(63 downto 0);
 
---type reg_array is array(0 to 2) of signed(22 downto 0);
---signal y : reg_array :=(
---""
---);
 
 attribute mark_debug : string;
 
 attribute mark_debug of clk : signal is "true";
 
-attribute mark_debug of y1 : signal is "true";
-attribute mark_debug of y2 : signal is "true";
-attribute mark_debug of y3 : signal is "true";
-attribute mark_debug of temp : signal is "true";
 
-attribute mark_debug of u1 : signal is "true";
-attribute mark_debug of u2 : signal is "true";
-attribute mark_debug of u3 : signal is "true";
 
 begin
     process(clk)
+    variable var : integer;
+    variable y1 : integer := 0;
+    variable y2 : integer := 0;
+    variable y3 : integer := 0;
+    
+    variable u1 : integer := 0;
+    variable u2 : integer := 0;
+    variable u3 : integer := 0;
+
     begin
         if(rising_edge(clk))
         then
-            y1<=y2;
-            y2<=y3;
-            y3<="00000000000000000000000000000000";
-            
-            u1<=u2;
-            u2<=u3;
-            u3<="000000000000000000000000" & inp;
+            y1:=y2;
+                    y2:=y3;
+                    y3:=0;
+                    
+                                
+                                            
+                                            
+           u1:=u2;
+           u2:=u3;
+           u3:=to_integer(unsigned(inp));
             
             --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
-            temp <= u2 + std_logic_vector(24*unsigned(y2)) -  std_logic_vector(9*unsigned(y1))  ;
-            y3 <= temp(35 downto 4);
+            --temp <= std_logic_vector(unsigned(u2)*2);-- + std_logic_vector(24*unsigned(y2)) -  std_logic_vector(9*unsigned(y1))  ;
+            var := (5*u3+11*u2+5*u1);
+            var := var + 377 * y2-143*y1;
+            var := var /256;
+            y3 := var;  
+
+            --y3 <= y3 / 4;
             --y3 <= shift_right(y3, 4);
             
             --temp <= y3 * 4;
             --y3 <= temp(31 downto 0);
             
-            outp <= std_logic_vector(y3(9 downto 2));
+            outp <= std_logic_vector(to_unsigned(y3, 8));
+            
         end if;
     end process;
     

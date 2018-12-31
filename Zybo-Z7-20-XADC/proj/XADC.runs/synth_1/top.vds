@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Dec 31 08:20:09 2018
-# Process ID: 11372
+# Start of session at: Mon Dec 31 11:23:32 2018
+# Process ID: 6260
 # Current directory: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.vds
@@ -16,26 +16,22 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16692 
+INFO: Helper process launched with PID 11772 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 413.223 ; gain = 93.203
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 413.047 ; gain = 92.906
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
 INFO: [Synth 8-638] synthesizing module 'ClockDivider' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (1#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/ClockDivider.vhd:41]
 INFO: [Synth 8-638] synthesizing module 'dac' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'dac' (2#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/dac.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'transferFunction' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:37]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:33]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:39]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:40]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:41]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:43]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:44]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:45]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'transferFunction' (3#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:37]
-INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-11372-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl:33]
+INFO: [Synth 8-638] synthesizing module 'transferFunction' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:36]
+WARNING: [Synth 8-6014] Unused sequential element y1_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:67]
+WARNING: [Synth 8-6014] Unused sequential element u1_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:74]
+WARNING: [Synth 8-6014] Unused sequential element var_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'transferFunction' (3#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/.Xil/Vivado-6260-DESKTOP-871TSOM/realtime/xadc_wiz_0_stub.vhdl:33]
 WARNING: [Synth 8-350] instance 'myxadc' of module 'xadc_wiz_0' requires 22 connections, but only 16 given [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:70]
 INFO: [Synth 8-226] default block is never used [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:97]
 WARNING: [Synth 8-6014] Unused sequential element ledidx_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:105]
@@ -43,7 +39,7 @@ WARNING: [Synth 8-6014] Unused sequential element clockDivider_reg was removed. 
 INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:21]
 WARNING: [Synth 8-3331] design dac has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 467.754 ; gain = 147.734
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 470.930 ; gain = 150.789
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,8 +52,339 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 467.754 ; gain = 147.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 470.930 ; gain = 150.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 467.754 ; gain = 147.734
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 470.930 ; gain = 150.789
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'myxadc'
+Finished Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'myxadc'
+Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]
+Finished Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 825.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for myxadc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'pwm_duty2_reg[7:0]' into 'pwm_duty1_reg[7:0]' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:118]
+INFO: [Synth 8-4471] merging register 'pwm_duty3_reg[7:0]' into 'pwm_duty1_reg[7:0]' [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:119]
+WARNING: [Synth 8-6014] Unused sequential element pwm_duty2_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:118]
+WARNING: [Synth 8-6014] Unused sequential element pwm_duty3_reg was removed.  [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/hdl/top.v:119]
+INFO: [Synth 8-5544] ROM "data0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
+	                 4x32  Multipliers := 1     
+	                10x32  Multipliers := 1     
+	                 9x32  Multipliers := 1     
+	                  4x9  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module transferFunction 
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
+	                 4x32  Multipliers := 1     
+	                10x32  Multipliers := 1     
+	                 9x32  Multipliers := 1     
+	                  4x9  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[0]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[1]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[2]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[3]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[4]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[5]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pwm_duty1_reg[6]' (FDRE) to 'pwm_duty1_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pwm_duty1_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (pwm_duty1_reg[7]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[8]' (FD) to 'tf/u3_reg[9]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[9]' (FD) to 'tf/u3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[10]' (FD) to 'tf/u3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[11]' (FD) to 'tf/u3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[12]' (FD) to 'tf/u3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[13]' (FD) to 'tf/u3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[14]' (FD) to 'tf/u3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[15]' (FD) to 'tf/u3_reg[16]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[16]' (FD) to 'tf/u3_reg[17]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[17]' (FD) to 'tf/u3_reg[18]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[18]' (FD) to 'tf/u3_reg[19]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[19]' (FD) to 'tf/u3_reg[20]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[20]' (FD) to 'tf/u3_reg[21]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[21]' (FD) to 'tf/u3_reg[22]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[22]' (FD) to 'tf/u3_reg[23]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[23]' (FD) to 'tf/u3_reg[24]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[24]' (FD) to 'tf/u3_reg[25]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[25]' (FD) to 'tf/u3_reg[26]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[26]' (FD) to 'tf/u3_reg[27]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[27]' (FD) to 'tf/u3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[30]' (FD) to 'tf/u3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[29]' (FD) to 'tf/u3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[31]' (FD) to 'tf/u3_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tf/\u3_reg[28] )
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[29]' (FD) to 'tf/y3_reg[30]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[30]' (FD) to 'tf/y3_reg[26]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[26]' (FD) to 'tf/y3_reg[27]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[27]' (FD) to 'tf/y3_reg[28]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[28]' (FD) to 'tf/y3_reg[24]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[24]' (FD) to 'tf/y3_reg[25]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[25]' (FD) to 'tf/y3_reg[23]'
+INFO: [Synth 8-3886] merging instance 'tf/y3_reg[23]' (FD) to 'tf/y3_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[8]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u3_reg[28]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[9]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[10]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[11]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[12]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[13]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[14]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[15]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[16]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[17]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[18]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[19]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[20]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[21]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[22]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[23]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[24]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[25]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[26]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[27]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[30]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[28]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'tf/u2_reg[29]' (FD) to 'tf/u2_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tf/\u2_reg[31] )
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[31]' (FD) to 'tf/y2_reg[23]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[30]' (FD) to 'tf/y2_reg[23]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[23]' (FD) to 'tf/y2_reg[24]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[24]' (FD) to 'tf/y2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[27]' (FD) to 'tf/y2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[25]' (FD) to 'tf/y2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[28]' (FD) to 'tf/y2_reg[29]'
+INFO: [Synth 8-3886] merging instance 'tf/y2_reg[29]' (FD) to 'tf/y2_reg[26]'
+WARNING: [Synth 8-3332] Sequential element (u2_reg[31]) is unused and will be removed from module transferFunction.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 825.922 ; gain = 505.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 832.578 ; gain = 512.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module myxadc has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module myxadc has unconnected pin vn_in
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.srcs/sources_1/new/transferFunction.vhd:67]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 832.578 ; gain = 512.438
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 832.578 ; gain = 512.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 832.578 ; gain = 512.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |xadc_wiz_0_bbox_0 |     1|
+|2     |BUFG              |     1|
+|3     |CARRY4            |    99|
+|4     |LUT1              |    69|
+|5     |LUT2              |   132|
+|6     |LUT3              |   117|
+|7     |LUT4              |   102|
+|8     |LUT5              |    25|
+|9     |LUT6              |    42|
+|10    |FDRE              |   112|
+|11    |IBUF              |     9|
+|12    |OBUF              |    13|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   747|
+|2     |  div    |ClockDivider     |    19|
+|3     |  tf     |transferFunction |   627|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 832.578 ; gain = 512.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 832.578 ; gain = 157.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 832.578 ; gain = 512.438
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 12 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 841.953 ; gain = 532.070
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 841.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 31 11:23:59 2018...

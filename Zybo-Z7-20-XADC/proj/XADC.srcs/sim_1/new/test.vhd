@@ -1,81 +1,52 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 12/30/2018 10:30:47 PM
--- Design Name: 
--- Module Name: test - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.Std_logic_1164.all;
+use IEEE.Numeric_Std.all;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+entity transferFunction_tb is
+end;
 
+architecture bench of transferFunction_tb is
 
+  component transferFunction
+      Port ( inp : in std_logic_vector (7 downto 0);
+              clk : in std_logic;
+             outp : out std_logic_vector (7 downto 0)
+            );
+  end component;
 
-
-entity test is
-    Port ( u : in STD_LOGIC_VECTOR (7 downto 0));
-end test;
-
-architecture Behavioral of test is
-
-signal clk : std_logic;
+  signal inp: std_logic_vector (7 downto 0);
+  signal clk: std_logic;
+  signal outp: std_logic_vector (7 downto 0);
 
 
-signal inp : std_logic_vector (7 downto 0);
-
-signal outp : std_logic_vector (7 downto 0);
-
-component transferFunction
-Port ( inp : in std_logic_vector (7 downto 0);
-            clk : in std_logic;
-           outp : out std_logic_vector (7 downto 0));
-end component;
-
+  constant clock_period: time := 10 ns;
+  signal stop_the_clock: boolean;
 
 begin
-uu : transferFunction port map(clk => clk, inp => inp, outp => outp);
 
-process
-begin
-    inp <="00001111";
-    clk <= '1';
-       wait for 1 ms;
-       clk <= '0';
-       wait for 1 ms;
-       clk <= '1';
-           wait for 1 ms;
-           clk <= '0';
-           wait for 1 ms;
-            clk <= '1';
-              wait for 1 ms;
-              clk <= '0';
-              wait for 1 ms;
-              clk <= '1';
-                  wait for 1 ms;
-                  clk <= '0';
-                  wait for 1 ms;
-end process;
+  uut: transferFunction port map ( inp  => inp,
+                                   clk  => clk,
+                                   outp => outp );
 
-end Behavioral;
+  stimulus: process
+  begin
+  
+    -- Put initialisation code here
+    inp <= "00011111";
+
+    -- Put test bench stimulus code here
+
+    stop_the_clock <= false;
+    wait;
+  end process;
+
+  clocking: process
+  begin
+    while not stop_the_clock loop
+      clk <= '0', '1' after clock_period / 2;
+      wait for clock_period;
+    end loop;
+    wait;
+  end process;
+
+end;

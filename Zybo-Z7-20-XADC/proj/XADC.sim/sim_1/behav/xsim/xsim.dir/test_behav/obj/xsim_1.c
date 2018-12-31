@@ -44,18 +44,27 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-extern void execute_36(char*, char *);
-extern void execute_35(char*, char *);
+extern void execute_2(char*, char *);
+extern void execute_3(char*, char *);
+extern void execute_4(char*, char *);
+extern void execute_5(char*, char *);
+extern void execute_6(char*, char *);
+extern void execute_7(char*, char *);
+extern void execute_8(char*, char *);
+extern void execute_9(char*, char *);
+extern void execute_45(char*, char *);
+extern void execute_44(char*, char *);
+extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-extern void transaction_1(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[4] = {(funcp)execute_36, (funcp)execute_35, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_1};
-const int NumRelocateId= 4;
+extern void transaction_33(char*, char*, unsigned, unsigned, unsigned);
+funcp funcTab[13] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_5, (funcp)execute_6, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_45, (funcp)execute_44, (funcp)vlog_transfunc_eventcallback, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_33};
+const int NumRelocateId= 13;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/test_behav/xsim.reloc",  (void **)funcTab, 4);
-	iki_vhdl_file_variable_register(dp + 4096);
-	iki_vhdl_file_variable_register(dp + 4152);
+	iki_relocate(dp, "xsim.dir/test_behav/xsim.reloc",  (void **)funcTab, 13);
+	iki_vhdl_file_variable_register(dp + 9512);
+	iki_vhdl_file_variable_register(dp + 9568);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
