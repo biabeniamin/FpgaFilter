@@ -79,7 +79,7 @@ begin
             
             --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
             temp <= u2 + std_logic_vector(24*unsigned(y2)) -  std_logic_vector(9*unsigned(y1))  ;
-            y3 <= temp(31 downto 0);
+            y3 <= temp(35 downto 4);
             --y3 <= shift_right(y3, 4);
             
             --temp <= y3 * 4;

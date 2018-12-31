@@ -59,7 +59,7 @@ uu : transferFunction port map(clk => clk, inp => inp, outp => outp);
 
 process
 begin
-    inp <="11111111";
+    inp <="00001111";
     clk <= '1';
        wait for 1 ms;
        clk <= '0';
