@@ -46,7 +46,8 @@ signal temp : std_logic_vector(63 downto 0):= "000000000000000000000000000000000
 
 attribute mark_debug : string;
 
-attribute mark_debug of clk : signal is "true";
+attribute mark_debug of outp : signal is "true";
+attribute mark_debug of inp : signal is "true";
 
 
 
