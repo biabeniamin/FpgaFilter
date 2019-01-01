@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -69,13 +68,20 @@ set rc [catch {
   set_param tcl.collectionResultDisplayLimit 0
   set_param board.repoPaths C:/Xilinx/board_files
   set_param xicom.use_bs_reader 1
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/impl_1/top.dcp
+  create_project -in_memory -part xc7z020clg400-1
+  set_property board_part_repo_paths C:/Xilinx/board_files [current_project]
+  set_property board_part digilentinc.com:zybo-z7-20:part0:1.0 [current_project]
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.cache/wt [current_project]
   set_property parent.project_path D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.xpr [current_project]
   set_property ip_repo_paths D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/repo [current_project]
   set_property ip_output_repo D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/repo/cache [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.dcp
+  read_ip -quiet D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xci
+  read_xdc D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/constraints/Zybo-Z7.xdc
+  link_design -top top -part xc7z020clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
