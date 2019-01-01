@@ -9,3 +9,4 @@
 # Log file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1/top.vds
 # Journal file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
+source top.tcl -notrace
