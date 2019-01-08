@@ -78,8 +78,8 @@ begin
             
             --temp <= (0*u3 + 1*u2 + 0*u1 + 24*y2 - 9*y1 );
             --temp <= std_logic_vector(unsigned(u2)*2);-- + std_logic_vector(24*unsigned(y2)) -  std_logic_vector(9*unsigned(y1))  ;
-            var := (15*u3+31*u2+15*u1);
-            var := var + 279 * y2-85*y1;
+            var := (5*u3+11*u2+5*u1);
+            var := var + 377 * y2-143*y1;
             var := var /256;
             y3 := var;  
 
