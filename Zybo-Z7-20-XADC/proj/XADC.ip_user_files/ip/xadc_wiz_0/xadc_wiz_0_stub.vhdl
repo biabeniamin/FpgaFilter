@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Wed Dec 26 13:15:05 2018
--- Host        : DESKTOP-871TSOM running 64-bit major release  (build 9200)
+-- Date        : Sat Jan  5 16:34:13 2019
+-- Host        : DESKTOP-5PUP7CD running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_stub.vhdl
+--               C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_stub.vhdl
 -- Design      : xadc_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

@@ -2,25 +2,24 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Dec 26 13:14:39 2018
-# Process ID: 9176
-# Current directory: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1
+# Start of session at: Sat Jan  5 16:33:35 2019
+# Process ID: 21156
+# Current directory: C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1
 # Command line: vivado.exe -log xadc_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_wiz_0.tcl
-# Log file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.vds
-# Journal file: D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1\vivado.jou
+# Log file: C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.vds
+# Journal file: C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1\vivado.jou
 #-----------------------------------------------------------
-Sourcing tcl script 'C:/Users/biabe/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source xadc_wiz_0.tcl -notrace
 Command: synth_design -top xadc_wiz_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2712 
+INFO: Helper process launched with PID 15420 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 411.270 ; gain = 93.813
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 368.109 ; gain = 95.848
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:83]
 	Parameter INIT_40 bound to: 16'b0000000000000000 
 	Parameter INIT_41 bound to: 16'b0010000110101111 
 	Parameter INIT_42 bound to: 16'b0000010100000000 
@@ -57,10 +56,10 @@ INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [d:/Beni/Vhdl/FpgaFilter/Zy
 	Parameter IS_DCLK_INVERTED bound to: 1'b0 
 	Parameter SIM_DEVICE bound to: ZYNQ - type: string 
 	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
-INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:150]
-INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (1#1) [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:83]
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (1#1) [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.vhd:83]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 465.852 ; gain = 148.395
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 422.922 ; gain = 150.660
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -73,10 +72,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 465.852 ; gain = 148.395
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 422.922 ; gain = 150.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 465.852 ; gain = 148.395
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 422.922 ; gain = 150.660
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -85,36 +84,36 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'U0'
-Finished Parsing XDC File [d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'U0'
-Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 728.926 ; gain = 0.191
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 685.602 ; gain = 0.188
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 728.926 ; gain = 411.469
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 685.602 ; gain = 413.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 728.926 ; gain = 411.469
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 685.602 ; gain = 413.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 728.926 ; gain = 411.469
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 685.602 ; gain = 413.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 728.926 ; gain = 411.469
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 685.602 ; gain = 413.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,7 +149,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 728.926 ; gain = 411.469
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 685.602 ; gain = 413.340
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -162,13 +161,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 798.574 ; gain = 481.117
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 751.805 ; gain = 479.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 798.648 ; gain = 481.191
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 751.805 ; gain = 479.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,7 +179,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 798.648 ; gain = 481.191
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 751.805 ; gain = 479.543
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,7 +203,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -217,7 +216,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -229,25 +228,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -273,11 +272,11 @@ Report Instance Areas:
 |1     |top      |       |     1|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 799.773 ; gain = 482.316
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 799.773 ; gain = 219.242
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 799.773 ; gain = 482.316
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 753.270 ; gain = 218.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 753.270 ; gain = 481.008
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -289,12 +288,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 828.199 ; gain = 520.883
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 779.613 ; gain = 514.813
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xci
-WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'D:/Beni/Vhdl/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/biabe/Desktop/FpgaFilter/Zybo-Z7-20-XADC/proj/XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file xadc_wiz_0_utilization_synth.rpt -pb xadc_wiz_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 832.523 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 26 13:15:05 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 779.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  5 16:34:13 2019...
