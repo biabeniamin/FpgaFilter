@@ -50,6 +50,6 @@ ylabel('Amplitudine(V)')
 
 figure
 
-
-ys=lsim(Hd, usim, t);
+[num2, den2] = tfdata(Hd);
+ys=dlsim(num2,den2, usim);
 plot(t,ys,t,ysim)
