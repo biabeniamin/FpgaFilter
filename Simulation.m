@@ -1,7 +1,7 @@
 close all
 %%transfer function of a low pass filter with cut off frequency of 345Hz
 H=tf([6.447*10^6],[1 4449 6.447*10^6])
-Te=208e-06;
+Te=131e-06;
 
 %%convert into discrete
 Hd=c2d(H,Te, 'Tustin');
@@ -19,7 +19,7 @@ den{1} = round(den{1});
 Hc=tf(num,den,'Variable', 'z^-1','Ts',Te)
 
 %%generate a sin
-t=0:0.1:10;
+t=0:Te:10;
 usim=sin(t);
 ysim=[0];
 
@@ -42,6 +42,14 @@ end
 
 %%plot the input and output
 
-plot(t,[ysim],t,usim);
+plot(t,ysim,t,usim);
 legend('output', 'input')
 title('System response - input and output of filter')
+xlabel('Timp(s)')
+ylabel('Amplitudine(V)')
+
+figure
+
+[num2, den2] = tfdata(Hd);
+ys=dlsim(num2,den2, usim);
+plot(t,ys,t,ysim)
